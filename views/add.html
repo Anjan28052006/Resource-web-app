@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Manga Resource</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>➕ Add a New Manga Resource</h1>
+  <form action="/add" method="POST">
+    <input type="text" name="title" placeholder="Enter manga title" required><br><br>
+    <select name="type" required>
+      <option value="Manga">Manga</option>
+      <option value="Anime">Anime</option>
+      <option value="Novel">Novel</option>
+    </select><br><br>
+    <input type="url" name="link" placeholder="Enter resource URL" required><br><br>
+    <button type="submit">Add Manga Resource</button>
+  </form>
+  <br>
+  <a href="/" class="btn">⬅ Back to Home</a>
+</body>
+</html>
